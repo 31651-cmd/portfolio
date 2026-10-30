@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <linearGradient id="gymBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF9" />
+      <stop offset="100%" stop-color="#EFE7DA" />
+    </linearGradient>
+    <filter id="plateShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#171717" flood-opacity="0.1" />
+    </filter>
+
+    <style>
+      /* Animações de equilíbrio e foco constante */
+      @keyframes slowZenRotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes barbellFloat {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      .animated-rings {
+        transform-origin: 0 0;
+        animation: slowZenRotate 28s linear infinite;
+      }
+
+      .animated-barbell {
+        animation: barbellFloat 5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#gymBg)" />
+  <rect x="24" y="24" width="852" height="552" fill="none" stroke="#D8C8AD" stroke-width="1" stroke-dasharray="4 4" opacity="0.7" />
+
+  <!-- Clean geometric balance illustration (Animated Float) -->
+  <g class="animated-barbell" transform="translate(450, 340)" filter="url(#plateShadow)">
+    <!-- Barbell Shaft -->
+    <rect x="-320" y="-8" width="640" height="16" rx="8" fill="#171717" />
+    <rect x="-140" y="-12" width="280" height="24" rx="4" fill="#D8C8AD" opacity="0.4" />
+    
+    <!-- Left Weight Plates -->
+    <rect x="-170" y="-22" width="16" height="44" rx="4" fill="#171717" />
+    <rect x="-215" y="-130" width="35" height="260" rx="8" fill="#171717" />
+    <line x1="-197" y1="-100" x2="-197" y2="100" stroke="#D8C8AD" stroke-width="2" />
+    <rect x="-255" y="-115" width="32" height="230" rx="8" fill="#2E2E2E" />
+    <rect x="-275" y="-30" width="15" height="60" rx="3" fill="#D8C8AD" />
+
+    <!-- Right Weight Plates -->
+    <rect x="154" y="-22" width="16" height="44" rx="4" fill="#171717" />
+    <rect x="180" y="-130" width="35" height="260" rx="8" fill="#171717" />
+    <line x1="197" y1="-100" x2="197" y2="100" stroke="#D8C8AD" stroke-width="2" />
+    <rect x="223" y="-115" width="32" height="230" rx="8" fill="#2E2E2E" />
+    <rect x="260" y="-30" width="15" height="60" rx="3" fill="#D8C8AD" />
+
+    <!-- Central Minimal Balance Rings (Animated Zen Rotation) -->
+    <g class="animated-rings">
+      <circle cx="0" cy="0" r="45" fill="none" stroke="#D8C8AD" stroke-width="1.8" stroke-dasharray="6 6" />
+      <circle cx="0" cy="0" r="30" fill="none" stroke="#E2D4BC" stroke-width="1.2" stroke-dasharray="3 3" />
+    </g>
+    <circle cx="0" cy="0" r="6" fill="#171717" />
+  </g>
+
+  <!-- Editorial typography -->
+  <text x="80" y="110" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="600" fill="#171717">Disciplina &amp; Saúde</text>
+  <text x="80" y="140" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="500" fill="#756F64" letter-spacing="3">ACADEMIA, FORÇA E CONSISTÊNCIA DIÁRIA</text>
+
+  <!-- Clean tags -->
+  <g transform="translate(80, 200)">
+    <rect width="160" height="42" rx="21" fill="#FFFFFF" stroke="#D8C8AD" stroke-width="1" />
+    <text x="80" y="26" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#171717">Foco &amp; Resiliência</text>
+  </g>
+  <g transform="translate(255, 200)">
+    <rect width="180" height="42" rx="21" fill="#F4EFE6" />
+    <text x="90" y="26" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="500" fill="#756F64">Evolução Contínua</text>
+  </g>
+</svg>

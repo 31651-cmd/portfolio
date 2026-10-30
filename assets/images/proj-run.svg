@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="rGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7" />
+      <stop offset="100%" stop-color="#EFE7DA" />
+    </linearGradient>
+
+    <style>
+      @keyframes milestonePulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.3);
+        }
+      }
+
+      @keyframes graphFlow {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -40; }
+      }
+
+      .animated-milestone {
+        transform-origin: 360px 60px;
+        animation: milestonePulse 2.8s ease-in-out infinite;
+      }
+
+      .animated-graph-path {
+        stroke-dasharray: 8 4;
+        animation: graphFlow 3.5s linear infinite;
+      }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="url(#rGrad)" />
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#D8C8AD" stroke-width="1" />
+  
+  <rect x="40" y="40" width="720" height="420" rx="8" fill="#FFFFFF" stroke="#E2DACD" />
+  <line x1="40" y1="80" x2="760" y2="80" stroke="#EFE9DE" />
+  
+  <circle cx="65" cy="60" r="4" fill="#D8C8AD" />
+  <circle cx="80" cy="60" r="4" fill="#D8C8AD" />
+  <circle cx="95" cy="60" r="4" fill="#D8C8AD" />
+  <text x="400" y="64" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#888">pace-rhythm.app</text>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 110)">
+    <rect x="0" y="0" width="190" height="90" rx="6" fill="#FBF9F5" stroke="#EFE9DE" />
+    <text x="20" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#888">DISTÂNCIA TOTAL</text>
+    <text x="20" y="68" font-family="'Playfair Display', serif" font-size="32" font-weight="700" fill="#171717">42.8 <tspan font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="400" fill="#888">km</tspan></text>
+
+    <rect x="220" y="0" width="190" height="90" rx="6" fill="#FBF9F5" stroke="#EFE9DE" />
+    <text x="240" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#888">PACE MÉDIO</text>
+    <text x="240" y="68" font-family="'Playfair Display', serif" font-size="32" font-weight="700" fill="#171717">4'48" <tspan font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="400" fill="#888">/km</tspan></text>
+
+    <rect x="440" y="0" width="190" height="90" rx="6" fill="#FBF9F5" stroke="#EFE9DE" />
+    <text x="460" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#888">TEMPO EM MOVIMENTO</text>
+    <text x="460" y="68" font-family="'Playfair Display', serif" font-size="32" font-weight="700" fill="#171717">3h 24m</text>
+  </g>
+
+  <!-- Elevation / Pace Graph Chart (Animated) -->
+  <g transform="translate(80, 240)">
+    <rect x="0" y="0" width="630" height="170" rx="6" fill="#FDFCF9" stroke="#EFE9DE" />
+    <line x1="30" y1="40" x2="600" y2="40" stroke="#F0EBE0" stroke-dasharray="3 3" />
+    <line x1="30" y1="85" x2="600" y2="85" stroke="#F0EBE0" stroke-dasharray="3 3" />
+    <line x1="30" y1="130" x2="600" y2="130" stroke="#F0EBE0" stroke-dasharray="3 3" />
+    
+    <!-- Smooth graph line (Animated) -->
+    <path class="animated-graph-path" d="M 40 120 Q 120 70, 200 100 T 360 60 T 520 90 T 590 50" fill="none" stroke="#D8C8AD" stroke-width="4" />
+    <path d="M 40 120 Q 120 70, 200 100 T 360 60 T 520 90 T 590 50 L 590 150 L 40 150 Z" fill="#D8C8AD" opacity="0.15" />
+    
+    <!-- Current milestone dot (Animated Pulse) -->
+    <circle class="animated-milestone" cx="360" cy="60" r="6" fill="#171717" stroke="#FFFFFF" stroke-width="2" />
+    <text x="360" y="44" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#171717">Split 5: 4'35"/km</text>
+  </g>
+</svg>

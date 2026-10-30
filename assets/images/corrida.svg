@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <linearGradient id="runBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7" />
+      <stop offset="100%" stop-color="#EFE6D6" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5D6BF" />
+      <stop offset="100%" stop-color="#D8C8AD" />
+    </linearGradient>
+
+    <style>
+      /* Animações de movimento contínuo e ritmo respiratório */
+      @keyframes sunDawnPulse {
+        0%, 100% {
+          transform: scale(1);
+          opacity: 0.4;
+        }
+        50% {
+          transform: scale(1.08);
+          opacity: 0.6;
+        }
+      }
+
+      @keyframes runnerStride {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      @keyframes trailFlow {
+        from {
+          stroke-dashoffset: 0;
+        }
+        to {
+          stroke-dashoffset: -60;
+        }
+      }
+
+      .animated-sun {
+        transform-origin: 680px 260px;
+        animation: sunDawnPulse 6s ease-in-out infinite;
+      }
+
+      .animated-runner {
+        animation: runnerStride 1.8s ease-in-out infinite;
+      }
+
+      .animated-flow-line {
+        stroke-dasharray: 10 10;
+        animation: trailFlow 4s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#runBg)" />
+  <rect x="24" y="24" width="852" height="552" fill="none" stroke="#D8C8AD" stroke-width="1" stroke-dasharray="4 4" opacity="0.7" />
+
+  <!-- Rising warm dawn sun arc (Animated Pulse) -->
+  <g class="animated-sun">
+    <circle cx="680" cy="260" r="140" fill="url(#sunGrad)" />
+    <circle cx="680" cy="260" r="90" fill="#FFFFFF" opacity="0.5" />
+  </g>
+
+  <!-- Flowing topographic running paths (Animated Flow) -->
+  <path d="M 0 460 C 250 430, 480 500, 900 420" fill="none" stroke="#D8C8AD" stroke-width="2" />
+  <path d="M 0 500 C 300 470, 580 530, 900 470" fill="none" stroke="#171717" stroke-width="1.5" opacity="0.25" />
+  <path class="animated-flow-line" d="M 0 530 C 200 510, 600 560, 900 520" fill="none" stroke="#D8C8AD" stroke-width="2" opacity="0.75" />
+
+  <!-- Runner Silhouette (Animated Natural Stride) -->
+  <g class="animated-runner" transform="translate(390, 240)">
+    <!-- Head -->
+    <circle cx="62" cy="30" r="16" fill="#171717" />
+    
+    <!-- Torso leaning forward in natural running form -->
+    <path d="M 58 48 L 44 110 L 32 108 L 46 48 Z" fill="#171717" />
+    
+    <!-- Arms -->
+    <path d="M 52 56 L 82 82 L 74 118" fill="none" stroke="#171717" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 48 58 L 22 84 L 16 112" fill="none" stroke="#756F64" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Legs in full stride -->
+    <path d="M 44 110 L 74 158 L 94 205 L 115 205" fill="none" stroke="#171717" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 40 110 L -4 146 L -35 125 L -52 140" fill="none" stroke="#171717" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Editorial typography & telemetry badge -->
+  <text x="80" y="110" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="600" fill="#171717">Ritmo &amp; Liberdade</text>
+  <text x="80" y="140" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="500" fill="#756F64" letter-spacing="3">CONSTÂNCIA, CLAREZA MENTAL E EQUILÍBRIO</text>
+
+  <!-- Clean metric tags with subtle hover look -->
+  <g transform="translate(80, 210)">
+    <rect width="130" height="42" rx="21" fill="#FFFFFF" stroke="#D8C8AD" stroke-width="1" />
+    <text x="65" y="26" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#171717">5K • 10K • 21K</text>
+  </g>
+  <g transform="translate(225, 210)">
+    <rect width="150" height="42" rx="21" fill="#F4EFE6" />
+    <text x="75" y="26" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="500" fill="#756F64">Foco &amp; Respiração</text>
+  </g>
+</svg>

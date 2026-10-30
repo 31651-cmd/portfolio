@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio Pessoal de Enrico Pereira Bonato — 17 anos, sociável, calmo e tranquilo. Interesses em jogos, tecnologia, esportes, corrida e piano.">
+  <meta name="author" content="Enrico Pereira Bonato">
+  <title>Enrico Pereira Bonato — Portfólio Pessoal</title>
+
+  <!-- Favicon minimalista em SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23171717'/><text x='50' y='65' font-family='serif' font-size='55' font-weight='bold' fill='%23D8C8AD' text-anchor='middle'>E</text></svg>">
+
+  <!-- Tipografias Editoriais: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos Principais -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="editorial-body">
+
+  <!-- Cursor Personalizado Minimalista (inspirado em Lusion Labs) -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Barra de Acessibilidade / Pular para o Conteúdo -->
+  <a href="#conteudo-principal" class="skip-to-content">Pular para o conteúdo principal</a>
+
+  <!-- CABEÇALHO / MENU FIXO -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#inicio" class="logo-link" aria-label="Ir para o início">
+        <span class="logo-text">Enrico Pereira Bonato</span>
+        <span class="logo-badge">17 anos</span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+          <li><a href="#interesses" class="nav-link">Interesses &amp; Hobbies</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão CTA Desktop & Botão Hamburguer Mobile -->
+      <div class="header-actions">
+        <a href="#contato" class="btn-header-cta">
+          <span>Conversar</span>
+          <svg class="icon-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menu de navegação">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE OVERLAY -->
+  <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu de Navegação</span>
+        <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Fechar menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Navegação móvel">
+        <ul class="mobile-nav-list">
+          <li><a href="#inicio" class="mobile-nav-link"><span class="link-number">01</span> Início</a></li>
+          <li><a href="#sobre" class="mobile-nav-link"><span class="link-number">02</span> Sobre Mim</a></li>
+          <li><a href="#interesses" class="mobile-nav-link"><span class="link-number">03</span> Interesses &amp; Hobbies</a></li>
+          <li><a href="#projetos" class="mobile-nav-link"><span class="link-number">04</span> Projetos</a></li>
+          <li><a href="#contato" class="mobile-nav-link"><span class="link-number">05</span> Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-footer">
+        <p class="mobile-quote">"Entre ideias, movimento e criatividade."</p>
+        <span class="mobile-tag">Enrico Pereira Bonato • 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal">
+
+    <!-- 1. SEÇÃO INÍCIO (HERO) -->
+    <section class="section-hero" id="inicio">
+      <div class="hero-container">
+        
+        <!-- Topo da Seção: Badge de Status e Localização -->
+        <div class="hero-top-meta reveal-item">
+          <span class="status-indicator">
+            <span class="status-dot"></span>
+            Aberto a novas ideias e conversas
+          </span>
+          <span class="meta-separator">•</span>
+          <span class="hero-location">Brasil</span>
+          <span class="meta-separator">•</span>
+          <span class="hero-age">17 anos</span>
+        </div>
+
+        <!-- Título Principal em Tipografia Editorial de Alto Impacto -->
+        <div class="hero-headline-block">
+          <h1 class="hero-name reveal-item">
+            <span class="name-line">ENRICO</span>
+            <span class="name-line name-accent">PEREIRA</span>
+            <span class="name-line">BONATO</span>
+          </h1>
+
+          <p class="hero-tagline reveal-item">
+            Entre <span class="hover-word" data-word="ideias">ideias</span>, 
+            <span class="hover-word" data-word="movimento">movimento</span> e 
+            <span class="hover-word" data-word="criatividade">criatividade</span>.
+          </p>
+        </div>
+
+        <!-- Composição Visual Editorial Central -->
+        <div class="hero-visual-composition reveal-item">
+          <div class="hero-image-frame">
+            <img src="assets/images/enrico-portrait.svg" alt="Composição editorial minimalista representando Enrico Pereira Bonato" class="hero-img">
+            <div class="image-sheen-overlay"></div>
+            
+            <div class="hero-image-caption">
+              <span class="caption-tag">Identidade Pessoal</span>
+              <span class="caption-text">Sociável, calmo e tranquilo</span>
+            </div>
+          </div>
+
+          <!-- Card Flutuante Minimalista com Pilares -->
+          <div class="hero-floating-card">
+            <div class="card-corner-accent"></div>
+            <span class="floating-subtitle">Áreas de Conexão</span>
+            <ul class="hero-traits-list">
+              <li><span class="trait-dot"></span> Música &amp; Piano</li>
+              <li><span class="trait-dot"></span> Corrida &amp; Atividade Física</li>
+              <li><span class="trait-dot"></span> Jogos &amp; Tecnologia</li>
+              <li><span class="trait-dot"></span> Convivência &amp; Troca</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Indicador Elegante de Rolagem (Scroll Indicator) -->
+        <div class="hero-scroll-cue reveal-item">
+          <a href="#sobre" class="scroll-link" aria-label="Rolar para a seção Sobre Mim">
+            <span class="scroll-text">Explorar o portfólio</span>
+            <div class="scroll-icon-wrapper">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. SEÇÃO SOBRE MIM -->
+    <section class="section-sobre" id="sobre">
+      <div class="section-container">
+
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal-item">
+          <span class="section-badge">01 — SOBRE MIM</span>
+          <h2 class="section-title">Quem sou eu</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="sobre-grid">
+          
+          <!-- Coluna 1: Espaço para Fotografia Pessoal -->
+          <div class="sobre-media-col reveal-item">
+            <div class="photo-frame-wrapper">
+              <div class="photo-frame">
+                <img src="assets/images/enrico-portrait.svg" alt="Fotografia de Enrico Pereira Bonato" class="sobre-img" id="sobrePhoto">
+                <div class="image-sheen-overlay"></div>
+                
+                <!-- Badge editorial sobre a imagem -->
+                <div class="photo-badge">
+                  <span class="photo-badge-title">ENRICO P. BONATO</span>
+                  <span class="photo-badge-desc">17 anos • Sociável &amp; Tranquilo</span>
+                </div>
+              </div>
+
+              <!-- Nota explicativa discreta para edição futura -->
+              <div class="photo-edit-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+                <span>Espaço preparado para inserir sua foto pessoal (ex: <code>assets/images/enrico.jpg</code>)</span>
+              </div>
+            </div>
+
+            <!-- Destaque de Personalidade: Valores & Essência -->
+            <div class="personality-pills-card">
+              <div class="pill-item">
+                <span class="pill-num">01</span>
+                <div class="pill-info">
+                  <strong>Sociável &amp; Acolhedor</strong>
+                  <p>Gosto de conhecer pessoas, escutar boas histórias e compartilhar risadas.</p>
+                </div>
+              </div>
+              <div class="pill-item">
+                <span class="pill-num">02</span>
+                <div class="pill-info">
+                  <strong>Calmo &amp; Tranquilo</strong>
+                  <p>Equilíbrio emocional para lidar com situações e manter a mente clara.</p>
+                </div>
+              </div>
+              <div class="pill-item">
+                <span class="pill-num">03</span>
+                <div class="pill-info">
+                  <strong>Curiosidade Constante</strong>
+                  <p>Vontade sincera de experimentar o novo e desenvolver habilidades.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Textos Pessoais & Apresentação -->
+          <div class="sobre-text-col reveal-item">
+            
+            <div class="sobre-lead-quote">
+              <p class="lead-quote-text">
+                "Acredito que minha personalidade tranquila, junto com minha vontade de aprender e conhecer coisas novas, representa muito bem quem sou."
+              </p>
+            </div>
+
+            <div class="sobre-body-paragraphs">
+              <p class="sobre-para">
+                Sou <strong class="text-highlight">Enrico Pereira Bonato</strong>, tenho 
+                <span class="tag-inline">17 anos</span> e sou uma pessoa 
+                <span class="hover-word" data-word="sociável">sociável</span>, 
+                <span class="hover-word" data-word="calma">calma</span> e 
+                <span class="hover-word" data-word="tranquila">tranquila</span>. 
+                Gosto de conhecer pessoas, conversar e aproveitar bons momentos com quem está ao meu redor.
+              </p>
+
+              <p class="sobre-para">
+                Tenho interesse por <span class="hover-word" data-word="jogos">jogos</span>, 
+                <span class="hover-word" data-word="esportes">esportes</span> e atividades físicas, como 
+                <strong class="text-highlight">academia</strong>, 
+                <strong class="text-highlight">corrida</strong> e 
+                <strong class="text-highlight">basquete</strong>. Também gosto de tocar 
+                <span class="hover-word" data-word="piano">piano</span>, um hobby que representa meu lado musical e criativo.
+              </p>
+
+              <p class="sobre-para">
+                Gosto de experimentar coisas novas, desenvolver minhas habilidades e aproveitar diferentes experiências. 
+                Para mim, a vida é sobre encontrar o equilíbrio entre o foco em evoluir e a leveza de curtir o processo.
+              </p>
+            </div>
+
+            <!-- Dados Rápidos em Formato Editorial (sem visual de dashboard) -->
+            <div class="quick-facts-row">
+              <div class="fact-block">
+                <span class="fact-number">17</span>
+                <span class="fact-label">Anos de idade</span>
+              </div>
+              <div class="fact-block">
+                <span class="fact-number">02</span>
+                <span class="fact-label">Hobbies centrais (Piano &amp; Corrida)</span>
+              </div>
+              <div class="fact-block">
+                <span class="fact-number">03</span>
+                <span class="fact-label">Práticas esportivas regulares</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SEÇÃO INTERESSES E HOBBIES -->
+    <section class="section-interesses" id="interesses">
+      <div class="section-container">
+
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal-item">
+          <span class="section-badge">02 — INTERESSES &amp; HOBBIES</span>
+          <h2 class="section-title">O que move meu dia a dia</h2>
+          <p class="section-description">
+            Uma composição visual dos meus principais interesses — entre notas musicais, passos na pista, superação física e mundos virtuais.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Grade Editorial Assimétrica (sem cartões genéricos) -->
+        <div class="editorial-interests-grid">
+
+          <!-- 1. DESTAQUE AMPLO: PIANO -->
+          <article class="interest-editorial-card card-piano reveal-item">
+            <div class="interest-image-container">
+              <img src="assets/images/piano.svg" alt="Piano de cauda e teclas musicais em harmonia" class="interest-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <div class="interest-overlay"></div>
+              <button class="piano-play-trigger" id="btnPlayPiano" aria-label="Tocar acorde suave no piano">
+                <span class="piano-note-icon">♩</span>
+                <span>Tocar Acorde Suave</span>
+              </button>
+            </div>
+            <div class="interest-content">
+              <div class="interest-top-meta">
+                <span class="interest-category">Hobby • Musical &amp; Criativo</span>
+                <span class="interest-icon-badge">♩</span>
+              </div>
+              <h3 class="interest-heading">Piano</h3>
+              <p class="interest-desc">
+                Tocar piano representa meu lado mais musical e criativo. É onde encontro momentos de silêncio atento, sensibilidade artística e concentração profunda. Cada melodia é um espaço de expressão e calma.
+              </p>
+              <div class="interest-footer-tags">
+                <span class="footer-tag">Sensibilidade</span>
+                <span class="footer-tag">Concentração</span>
+                <span class="footer-tag">Expressão Sonora</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. CORRIDA -->
+          <article class="interest-editorial-card card-corrida reveal-item">
+            <div class="interest-image-container">
+              <img src="assets/images/corrida.svg" alt="Pista e trajeto de corrida ao ar livre" class="interest-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <div class="interest-overlay"></div>
+            </div>
+            <div class="interest-content">
+              <div class="interest-top-meta">
+                <span class="interest-category">Hobby &amp; Atividade</span>
+                <span class="interest-icon-badge">02</span>
+              </div>
+              <h3 class="interest-heading">Corrida</h3>
+              <p class="interest-desc">
+                Um dos meus principais hobbies. Correr é uma prática de ritmo, liberdade e clareza mental. A cada quilômetro percorrido, organizo os pensamentos e renovo minhas energias.
+              </p>
+              <div class="interest-footer-tags">
+                <span class="footer-tag">Constância</span>
+                <span class="footer-tag">Clareza Mental</span>
+                <span class="footer-tag">Fôlego</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. ACADEMIA -->
+          <article class="interest-editorial-card card-academia reveal-item">
+            <div class="interest-image-container">
+              <img src="assets/images/academia.svg" alt="Equipamentos e ambiente minimalista de treino de força" class="interest-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <div class="interest-overlay"></div>
+            </div>
+            <div class="interest-content">
+              <div class="interest-top-meta">
+                <span class="interest-category">Atividade Física</span>
+                <span class="interest-icon-badge">03</span>
+              </div>
+              <h3 class="interest-heading">Academia</h3>
+              <p class="interest-desc">
+                Dedicação diária aos treinos e ao condicionamento. A academia me ensina sobre paciência, consistência e o respeito pelo processo gradual de fortalecimento do corpo.
+              </p>
+              <div class="interest-footer-tags">
+                <span class="footer-tag">Disciplina</span>
+                <span class="footer-tag">Saúde</span>
+                <span class="footer-tag">Evolução</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. BASQUETE -->
+          <article class="interest-editorial-card card-basquete reveal-item">
+            <div class="interest-image-container">
+              <img src="assets/images/basquete.svg" alt="Aro de basquete e traços de quadra esportiva" class="interest-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <div class="interest-overlay"></div>
+            </div>
+            <div class="interest-content">
+              <div class="interest-top-meta">
+                <span class="interest-category">Esporte Coletivo</span>
+                <span class="interest-icon-badge">04</span>
+              </div>
+              <h3 class="interest-heading">Basquete</h3>
+              <p class="interest-desc">
+                O dinamismo da quadra, o jogo em equipe e a tomada rápida de decisão. Um esporte que gosto muito de praticar pelo companheirismo e pela energia vibrante da partida.
+              </p>
+              <div class="interest-footer-tags">
+                <span class="footer-tag">Trabalho em Equipe</span>
+                <span class="footer-tag">Ritmo</span>
+                <span class="footer-tag">Precisão</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. JOGOS -->
+          <article class="interest-editorial-card card-jogos reveal-item">
+            <div class="interest-image-container">
+              <img src="assets/images/jogos.svg" alt="Controle de videogame em composição minimalista" class="interest-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <div class="interest-overlay"></div>
+            </div>
+            <div class="interest-content">
+              <div class="interest-top-meta">
+                <span class="interest-category">Interesse &amp; Lazer</span>
+                <span class="interest-icon-badge">05</span>
+              </div>
+              <h3 class="interest-heading">Jogos</h3>
+              <p class="interest-desc">
+                Meu fascínio pelo universo dos games. Gosto de narrativas bem construídas, desafios de estratégia e, acima de tudo, dos bons momentos compartilhados com amigos em partidas descontraídas.
+              </p>
+              <div class="interest-footer-tags">
+                <span class="footer-tag">Estratégia</span>
+                <span class="footer-tag">Narrativa</span>
+                <span class="footer-tag">Convivência</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO PROJETOS -->
+    <section class="section-projetos" id="projetos">
+      <div class="section-container">
+
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal-item">
+          <span class="section-badge">03 — PROJETOS</span>
+          <h2 class="section-title">Galeria de Projetos</h2>
+          <p class="section-description">
+            Espaço reservado para projetos práticos, estudos e criações. Os itens abaixo são modelos de demonstração prontos para serem substituídos pelos meus projetos reais.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Aviso transparente de modelos demonstrativos -->
+        <div class="editable-banner reveal-item">
+          <div class="banner-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <div class="banner-text">
+            <strong>Modelos de Projetos Editáveis:</strong>
+            <span>Cada card possui links, tags técnicas e imagens organizadas. Você pode alterar nomes, descrições e repositórios facilmente no arquivo <code>index.html</code>.</span>
+          </div>
+        </div>
+
+        <!-- Filtros Rápidos Minimalistas -->
+        <div class="projects-filter-bar reveal-item">
+          <button class="filter-btn active" data-filter="all">Todos os Projetos</button>
+          <button class="filter-btn" data-filter="musica">Música &amp; Som</button>
+          <button class="filter-btn" data-filter="esportes">Esportes &amp; Dados</button>
+          <button class="filter-btn" data-filter="jogos">Jogos &amp; Web</button>
+        </div>
+
+        <!-- Grade de Projetos -->
+        <div class="projects-grid">
+
+          <!-- PROJETO 1: AURA PIANO -->
+          <article class="project-card reveal-item" data-category="musica">
+            <div class="project-media">
+              <img src="assets/images/proj-piano.svg" alt="Interface de demonstração do projeto Aura Piano" class="project-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <span class="project-status-pill">Exemplo Provisório</span>
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-tag">Áudio &amp; Interatividade</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Aura Piano &amp; Waves</h3>
+              <p class="project-description">
+                Uma experiência web minimalista que reproduz timbres de piano no navegador com visualizador de ondas sonoras em tempo real, unindo música e código simples.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">Web Audio API</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-project-link btn-demo" data-proj-title="Aura Piano &amp; Waves" data-proj-desc="Experiência interativa de sintetizador de piano web em tons relaxantes.">
+                  <span>Ver Demonstração</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link btn-code" aria-label="Código-fonte no GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Código-fonte</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 2: PACE & STRIDE -->
+          <article class="project-card reveal-item" data-category="esportes">
+            <div class="project-media">
+              <img src="assets/images/proj-run.svg" alt="Interface de demonstração do projeto Pace & Stride" class="project-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <span class="project-status-pill">Exemplo Provisório</span>
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-tag">Esporte &amp; Corrida</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Pace &amp; Stride Run Log</h3>
+              <p class="project-description">
+                Registro visual e intuitivo de treinos de corrida. Apresenta cálculo automático de pace, evolução semanal de quilometragem e gráficos sem poluição visual.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-project-link btn-demo" data-proj-title="Pace &amp; Stride Run Log" data-proj-desc="Painel editorial minimalista de treinos e acompanhamento de metas de corrida.">
+                  <span>Ver Demonstração</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link btn-code" aria-label="Código-fonte no GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Código-fonte</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 3: NEXUS GAME VAULT -->
+          <article class="project-card reveal-item" data-category="jogos">
+            <div class="project-media">
+              <img src="assets/images/proj-games.svg" alt="Interface de demonstração do projeto Nexus Game Vault" class="project-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <span class="project-status-pill">Exemplo Provisório</span>
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-tag">Jogos &amp; Catálogo</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Nexus Game Vault</h3>
+              <p class="project-description">
+                Catálogo curado de jogos favoritos, anotações de progresso e reflexões sobre trilhas sonoras e narrativas marcantes, construído com foco em legibilidade.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-project-link btn-demo" data-proj-title="Nexus Game Vault" data-proj-desc="Catálogo pessoal com filtros por gênero, notas e impressões sobre jogos.">
+                  <span>Ver Demonstração</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link btn-code" aria-label="Código-fonte no GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Código-fonte</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 4: EDITORIAL CRAFT -->
+          <article class="project-card reveal-item" data-category="jogos">
+            <div class="project-media">
+              <img src="assets/images/proj-portfolio.svg" alt="Interface de demonstração do projeto Editorial Craft" class="project-img" loading="lazy">
+              <div class="image-sheen-overlay"></div>
+              <span class="project-status-pill">Exemplo Provisório</span>
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-tag">Design &amp; Tipografia</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Editorial Craft Design</h3>
+              <p class="project-description">
+                Exploração de design editorial para a web: proporções harmônicas de grid, contrastes serifa/sem-serifa e microinterações táteis e tranquilas.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-tag">Design System</span>
+                <span class="tech-tag">Tipografia</span>
+                <span class="tech-tag">CSS Flex/Grid</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-project-link btn-demo" data-proj-title="Editorial Craft Design" data-proj-desc="Estudo detalhado de proporções visuais, espaços negativos e elegância estética.">
+                  <span>Ver Demonstração</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link btn-code" aria-label="Código-fonte no GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Código-fonte</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO CONTATO -->
+    <section class="section-contato" id="contato">
+      <div class="section-container">
+
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal-item">
+          <span class="section-badge">04 — CONTATO</span>
+          <h2 class="section-title">Vamos conversar</h2>
+          <p class="section-description">
+            Sinta-se à vontade para me enviar uma mensagem, trocar ideias sobre esportes, música, jogos ou novos projetos.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contato-grid">
+
+          <!-- Coluna da Esquerda: Canais Diretos & Redes -->
+          <div class="contato-info-col reveal-item">
+            
+            <div class="contato-card-highlight">
+              <span class="direct-label">Contato Direto</span>
+              <h3 class="direct-email-title">enricobonato@exemplo.com</h3>
+              <p class="direct-subtext">Você pode me contatar diretamente por e-mail ou pelas redes abaixo. Respondo com prazer.</p>
+              
+              <button class="btn-copy-email" id="btnCopyEmail" aria-label="Copiar endereço de e-mail">
+                <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copyEmailText">Copiar E-mail</span>
+              </button>
+            </div>
+
+            <!-- Lista de Redes Sociais com Estilo Editorial -->
+            <div class="social-channels-list">
+              <h4 class="channels-heading">Onde me encontrar</h4>
+              
+              <!-- GitHub -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-channel-item">
+                <div class="social-left">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </div>
+                <span class="social-arrow">↗</span>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-channel-item">
+                <div class="social-left">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </div>
+                <span class="social-arrow">↗</span>
+              </a>
+
+              <!-- Instagram / Outras Redes -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-channel-item">
+                <div class="social-left">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <span>Instagram</span>
+                </div>
+                <span class="social-arrow">↗</span>
+              </a>
+            </div>
+
+            <!-- Horário Local & Disponibilidade -->
+            <div class="local-time-card">
+              <div class="time-label">Horário Local (Brasil):</div>
+              <div class="time-display" id="localTimeDisplay">--:--:--</div>
+              <div class="time-status">Tranquilidade e foco em cada conversa</div>
+            </div>
+
+          </div>
+
+          <!-- Coluna da Direita: Formulário de Contato com Validação Real -->
+          <div class="contato-form-col reveal-item">
+            <div class="form-wrapper">
+              
+              <div class="form-top-header">
+                <h3 class="form-title">Envie uma Mensagem</h3>
+                <p class="form-subtitle">Preencha os campos abaixo. Todos os dados são validados instantaneamente.</p>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+
+                <!-- Campo Nome -->
+                <div class="form-group" id="groupNome">
+                  <label for="nome" class="form-label">Seu Nome <span class="required-star">*</span></label>
+                  <input type="text" id="nome" name="nome" class="form-input" placeholder="Como prefere ser chamado?" required minlength="2" autocomplete="name">
+                  <span class="form-error-msg" id="errorNome" aria-live="polite"></span>
+                </div>
+
+                <!-- Campo E-mail -->
+                <div class="form-group" id="groupEmail">
+                  <label for="email" class="form-label">Seu E-mail <span class="required-star">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="seuemail@exemplo.com" required autocomplete="email">
+                  <span class="form-error-msg" id="errorEmail" aria-live="polite"></span>
+                </div>
+
+                <!-- Campo Assunto -->
+                <div class="form-group" id="groupAssunto">
+                  <label for="assunto" class="form-label">Assunto</label>
+                  <input type="text" id="assunto" name="assunto" class="form-input" placeholder="Ex: Conversa sobre música, jogos ou projetos">
+                </div>
+
+                <!-- Campo Mensagem -->
+                <div class="form-group" id="groupMensagem">
+                  <div class="label-with-counter">
+                    <label for="mensagem" class="form-label">Sua Mensagem <span class="required-star">*</span></label>
+                    <span class="char-counter" id="charCounter">0 / 600</span>
+                  </div>
+                  <textarea id="mensagem" name="mensagem" class="form-textarea" rows="5" placeholder="Escreva sua mensagem com tranquilidade..." required minlength="10" maxlength="600"></textarea>
+                  <span class="form-error-msg" id="errorMensagem" aria-live="polite"></span>
+                </div>
+
+                <!-- Botão de Envio -->
+                <div class="form-action">
+                  <button type="submit" class="btn-submit" id="btnSubmit">
+                    <span class="btn-text">Enviar Mensagem</span>
+                    <svg class="btn-icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M1.5 7H12.5M12.5 7L7.5 2M12.5 7L7.5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="form-footer-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span>Validação transparente: este formulário está preparado para integração com Formspree, EmailJS ou backend próprio.</span>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE DEMONSTRAÇÃO DE PROJETO -->
+  <div class="project-modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="project-modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalProjTitle">Título do Projeto</h3>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fechar janela">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc" id="modalProjDesc">Descrição detalhada do projeto.</p>
+        <div class="modal-note-box">
+          <strong>Aviso de Portfólio:</strong>
+          <p>Este é um projeto de demonstração representativo. Quando Enrico adicionar os links finais de deploy e repositório, este botão abrirá a aplicação real diretamente.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-modal-dismiss" id="modalDismissBtn">Compreendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL / FEEDBACK DE ENVIO DO FORMULÁRIO -->
+  <div class="form-feedback-modal" id="formFeedbackModal" aria-hidden="true" role="alertdialog">
+    <div class="feedback-card">
+      <div class="feedback-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3 class="feedback-title">Mensagem Validada com Sucesso!</h3>
+      <p class="feedback-text">
+        Obrigado pelo contato! Seus dados foram checados e organizados com perfeição.
+      </p>
+      <div class="feedback-summary" id="feedbackSummary">
+        <!-- Preenchido via JavaScript -->
+      </div>
+      <div class="feedback-integration-tip">
+        <strong>Dica de Integração:</strong>
+        <p>Como este é um portfólio estático sem servidor próprio, você pode vincular este formulário em minutos a serviços gratuitos como <em>Formspree.io</em> ou <em>EmailJS</em>, ou enviar diretamente para o e-mail cadastrado.</p>
+      </div>
+      <button class="btn-feedback-close" id="btnFeedbackClose">Fechar</button>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION PARA CÓPIA DE E-MAIL -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMessage">E-mail copiado para a área de transferência!</span>
+  </div>
+
+  <!-- RODAPÉ EDITORIAL -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <span class="footer-name">ENRICO PEREIRA BONATO</span>
+          <p class="footer-tagline">Entre ideias, movimento e criatividade.</p>
+        </div>
+
+        <div class="footer-back-to-top">
+          <a href="#inicio" class="btn-back-top" aria-label="Voltar ao início da página">
+            <span>Voltar ao topo</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-row">
+        <p class="footer-copy">
+          &copy; <span id="currentYear">2026</span> Enrico Pereira Bonato. Desenvolvido com identidade editorial minimalista e acolhedora.
+        </p>
+
+        <div class="footer-palette-cue">
+          <span class="palette-swatch swatch-white" title="Branco #FFFFFF"></span>
+          <span class="palette-swatch swatch-beige" title="Bege #D8C8AD"></span>
+          <span class="palette-swatch swatch-black" title="Preto #171717"></span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

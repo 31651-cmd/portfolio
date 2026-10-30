@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7" />
+      <stop offset="50%" stop-color="#F5EFE6" />
+      <stop offset="100%" stop-color="#EBE3D5" />
+    </linearGradient>
+    <linearGradient id="beigeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8C8AD" />
+      <stop offset="100%" stop-color="#C7B596" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" result="blur" />
+    </filter>
+
+    <style>
+      /* Animações sutis e naturais de respiração */
+      @keyframes calmBreathe {
+        0%, 100% {
+          transform: scale(1) translate(0, 0);
+          opacity: 0.35;
+        }
+        50% {
+          transform: scale(1.08) translate(-10px, -8px);
+          opacity: 0.55;
+        }
+      }
+
+      @keyframes archFloat {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
+
+      @keyframes badgeDrift {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-4px);
+        }
+      }
+
+      @keyframes strokeDraw {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 48; }
+      }
+
+      .animated-aura-1 {
+        transform-origin: 500px 400px;
+        animation: calmBreathe 7s ease-in-out infinite;
+      }
+
+      .animated-aura-2 {
+        transform-origin: 300px 650px;
+        animation: calmBreathe 9s ease-in-out infinite reverse;
+      }
+
+      .animated-arch {
+        transform-origin: center bottom;
+        animation: archFloat 6s ease-in-out infinite;
+      }
+
+      .animated-frame-line {
+        animation: strokeDraw 12s linear infinite;
+      }
+
+      .animated-badge {
+        animation: badgeDrift 4.5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="1000" fill="url(#bgGrad)" />
+
+  <!-- Subtle Editorial Frame with Gentle Animated Stroke -->
+  <rect class="animated-frame-line" x="28" y="28" width="744" height="944" fill="none" stroke="#D8C8AD" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.65" />
+
+  <!-- Warm ambient backdrop shapes (Animated Breathe) -->
+  <circle class="animated-aura-1" cx="500" cy="400" r="260" fill="url(#beigeGrad)" filter="url(#softGlow)" />
+  <circle class="animated-aura-2" cx="300" cy="650" r="200" fill="#E2D4BC" filter="url(#softGlow)" />
+
+  <!-- Architectural Arch with Gentle Floating -->
+  <g class="animated-arch">
+    <path d="M 220 850 L 220 380 C 220 280, 580 280, 580 380 L 580 850 Z" fill="none" stroke="#171717" stroke-width="1.2" opacity="0.25" />
+    <path d="M 240 850 L 240 400 C 240 310, 560 310, 560 400 L 560 850 Z" fill="#FFFFFF" opacity="0.45" />
+
+    <!-- Abstract Stylized Portrait Silhouette (Calm, Minimalist, Elegant) -->
+    <!-- Shoulders & Torso -->
+    <path d="M 250 820 C 270 710, 330 650, 400 645 C 470 650, 530 710, 550 820 Z" fill="#171717" />
+    
+    <!-- Collar / Neck -->
+    <path d="M 365 650 L 365 520 C 365 500, 435 500, 435 520 L 435 650 Z" fill="#D8C8AD" opacity="0.45" />
+    <path d="M 370 640 L 400 680 L 430 640 Z" fill="#FFFFFF" />
+
+    <!-- Head & Hair Shape -->
+    <path d="M 330 420 C 330 320, 470 320, 470 420 C 470 480, 445 525, 400 525 C 355 525, 330 480, 330 420 Z" fill="#171717" />
+    <!-- Warm contour accent -->
+    <path d="M 350 435 C 350 355, 450 355, 450 435 C 450 475, 430 505, 400 505 C 370 505, 350 475, 350 435 Z" fill="#242424" />
+  </g>
+
+  <!-- Editorial Typography inside the artwork -->
+  <text x="400" y="160" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="28" font-style="italic" fill="#171717" letter-spacing="2">Enrico Pereira Bonato</text>
+  
+  <line x1="330" y1="185" x2="470" y2="185" stroke="#D8C8AD" stroke-width="1.5" />
+
+  <text x="400" y="215" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="500" fill="#756F64" letter-spacing="4">PORTFÓLIO PESSOAL • 17 ANOS</text>
+
+  <!-- Bottom Badge: Floating with subtle animation -->
+  <g class="animated-badge" transform="translate(240, 880)">
+    <rect width="320" height="48" rx="24" fill="#FFFFFF" stroke="#D8C8AD" stroke-width="1.2" />
+    <circle cx="30" cy="24" r="6" fill="#D8C8AD">
+      <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <text x="50" y="29" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#171717" letter-spacing="1">ESPAÇO PARA FOTO PESSOAL</text>
+  </g>
+</svg>

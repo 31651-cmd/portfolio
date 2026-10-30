@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <linearGradient id="gameBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF8" />
+      <stop offset="100%" stop-color="#EFE8DB" />
+    </linearGradient>
+    <filter id="padShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#171717" flood-opacity="0.1" />
+    </filter>
+
+    <style>
+      /* Animações sutis e relaxantes para jogos */
+      @keyframes controllerDrift {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-7px);
+        }
+      }
+
+      @keyframes lightGlow {
+        0%, 100% {
+          opacity: 0.35;
+          stroke-width: 2;
+        }
+        50% {
+          opacity: 0.95;
+          stroke-width: 2.8;
+        }
+      }
+
+      @keyframes buttonShine {
+        0%, 100% {
+          opacity: 0.85;
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.08);
+        }
+      }
+
+      .animated-controller {
+        animation: controllerDrift 4.8s ease-in-out infinite;
+      }
+
+      .animated-lightbar {
+        animation: lightGlow 3s ease-in-out infinite;
+      }
+
+      .animated-btn {
+        transform-origin: center;
+        animation: buttonShine 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#gameBg)" />
+  <rect x="24" y="24" width="852" height="552" fill="none" stroke="#D8C8AD" stroke-width="1" stroke-dasharray="4 4" opacity="0.7" />
+
+  <!-- Minimalist Clean Game Controller (Animated Drift) -->
+  <g class="animated-controller" transform="translate(450, 340)" filter="url(#padShadow)">
+    <!-- Controller Body Silhouette -->
+    <path d="M -180 50 C -220 120, -180 180, -130 160 C -100 150, -80 70, 0 70 C 80 70, 100 150, 130 160 C 180 180, 220 120, 180 50 C 150 -5, 110 -40, 0 -40 C -110 -40, -150 -5, -180 50 Z" fill="#171717" />
+    
+    <!-- Elegant Beige Accent Rim -->
+    <path d="M -80 70 C -40 70, -20 60, 0 60 C 20 60, 40 70, 80 70" fill="none" stroke="#D8C8AD" stroke-width="2" />
+
+    <!-- D-Pad (Left) -->
+    <g transform="translate(-100, 20)">
+      <rect x="-8" y="-24" width="16" height="48" rx="3" fill="#333333" />
+      <rect x="-24" y="-8" width="48" height="16" rx="3" fill="#333333" />
+      <circle cx="0" cy="0" r="4" fill="#D8C8AD" />
+    </g>
+
+    <!-- Action Buttons (Right) -->
+    <g transform="translate(100, 20)">
+      <circle class="animated-btn" cx="0" cy="-18" r="7" fill="#FFFFFF" />
+      <circle class="animated-btn" cx="18" cy="0" r="7" fill="#D8C8AD" />
+      <circle class="animated-btn" cx="0" cy="18" r="7" fill="#FFFFFF" />
+      <circle class="animated-btn" cx="-18" cy="0" r="7" fill="#D8C8AD" />
+    </g>
+
+    <!-- Thumbsticks -->
+    <circle cx="-50" cy="65" r="22" fill="#262626" stroke="#444" stroke-width="1.5" />
+    <circle cx="-50" cy="65" r="14" fill="#171717" />
+    
+    <circle cx="50" cy="65" r="22" fill="#262626" stroke="#444" stroke-width="1.5" />
+    <circle cx="50" cy="65" r="14" fill="#171717" />
+
+    <!-- Center Indicator Light / Touchpad Line (Animated Breathing Glow) -->
+    <line class="animated-lightbar" x1="-25" y1="-10" x2="25" y2="-10" stroke="#D8C8AD" stroke-linecap="round" />
+  </g>
+
+  <!-- Editorial typography -->
+  <text x="80" y="100" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="600" fill="#171717">Imersão &amp; Estratégia</text>
+  <text x="80" y="130" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="500" fill="#756F64" letter-spacing="3">UNIVERSO DOS GAMES, NARRATIVAS E DIVERSÃO</text>
+
+  <!-- Clean tags -->
+  <g transform="translate(80, 190)">
+    <rect width="180" height="40" rx="20" fill="#FFFFFF" stroke="#D8C8AD" stroke-width="1" />
+    <text x="90" y="25" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#171717">Raciocínio &amp; Narrativa</text>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="gGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7" />
+      <stop offset="100%" stop-color="#EEE6D8" />
+    </linearGradient>
+
+    <style>
+      @keyframes cardFloat1 {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes cardFloat2 {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+
+      .animated-shelf-card-1 {
+        animation: cardFloat1 4s ease-in-out infinite;
+      }
+      .animated-shelf-card-2 {
+        animation: cardFloat2 4.8s ease-in-out infinite 0.6s;
+      }
+      .animated-shelf-card-3 {
+        animation: cardFloat1 4.4s ease-in-out infinite 1.2s;
+      }
+    </style>
+  </defs>
+  <rect width="800" height="500" fill="url(#gGrad)" />
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#D8C8AD" stroke-width="1" />
+  
+  <rect x="40" y="40" width="720" height="420" rx="8" fill="#FFFFFF" stroke="#E2DACD" />
+  <line x1="40" y1="80" x2="760" y2="80" stroke="#EFE9DE" />
+  
+  <circle cx="65" cy="60" r="4" fill="#D8C8AD" />
+  <circle cx="80" cy="60" r="4" fill="#D8C8AD" />
+  <circle cx="95" cy="60" r="4" fill="#D8C8AD" />
+  <text x="400" y="64" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#888">nexus-shelf.vault</text>
+
+  <!-- Filter tabs -->
+  <g transform="translate(80, 105)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="#171717" />
+    <text x="40" y="19" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">TODOS</text>
+
+    <rect x="90" y="0" width="90" height="30" rx="15" fill="#F4EFE6" />
+    <text x="135" y="19" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#555">FAVORITOS</text>
+
+    <rect x="190" y="0" width="90" height="30" rx="15" fill="#F4EFE6" />
+    <text x="235" y="19" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#555">JOGANDO</text>
+  </g>
+
+  <!-- 3 Clean Minimal Cards (Animated subtle floating rhythm) -->
+  <g transform="translate(80, 160)">
+    <!-- Card 1 -->
+    <g class="animated-shelf-card-1">
+      <rect x="0" y="0" width="195" height="260" rx="6" fill="#F9F6F0" stroke="#EAE2D4" />
+      <rect x="15" y="15" width="165" height="150" rx="4" fill="#E8DEC9" />
+      <circle cx="97" cy="90" r="30" fill="#171717" opacity="0.1" />
+      <text x="20" y="195" font-family="'Playfair Display', serif" font-size="16" font-weight="600" fill="#171717">Hollow Knight</text>
+      <text x="20" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#888">Metroidvania • 10/10</text>
+      <line x1="20" y1="230" x2="175" y2="230" stroke="#E2DACD" />
+    </g>
+
+    <!-- Card 2 -->
+    <g class="animated-shelf-card-2">
+      <rect x="220" y="0" width="195" height="260" rx="6" fill="#F9F6F0" stroke="#EAE2D4" />
+      <rect x="235" y="15" width="165" height="150" rx="4" fill="#D8C8AD" opacity="0.7" />
+      <circle cx="317" cy="90" r="30" fill="#171717" opacity="0.1" />
+      <text x="240" y="195" font-family="'Playfair Display', serif" font-size="16" font-weight="600" fill="#171717">Outer Wilds</text>
+      <text x="240" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#888">Exploração • Obra-prima</text>
+      <line x1="240" y1="230" x2="395" y2="230" stroke="#E2DACD" />
+    </g>
+
+    <!-- Card 3 -->
+    <g class="animated-shelf-card-3">
+      <rect x="440" y="0" width="195" height="260" rx="6" fill="#F9F6F0" stroke="#EAE2D4" />
+      <rect x="455" y="15" width="165" height="150" rx="4" fill="#E4DBCB" />
+      <circle cx="537" cy="90" r="30" fill="#171717" opacity="0.1" />
+      <text x="460" y="195" font-family="'Playfair Display', serif" font-size="16" font-weight="600" fill="#171717">Zelda: BotW</text>
+      <text x="460" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#888">Aventura • 100+ Horas</text>
+      <line x1="460" y1="230" x2="615" y2="230" stroke="#E2DACD" />
+    </g>
+  </g>
+</svg>
